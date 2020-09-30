@@ -158,3 +158,16 @@ COMMANDS:
 
 
 
+bubble_sort:
+    pop ax 
+    pop si 
+    pop cx 
+    pop di 
+    push ax 
+   
+repeat_bubble_sort:
+    mov [di],[si]
+    inc di 
+    inc si 
+    loop repeat_bubble_sort
+   
